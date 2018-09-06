@@ -6,5 +6,5 @@ This is a responsive website which displays images, descriptions and links to ea
 
 ## Visit a website
 
-[Click here](...).
+[Click here](https://marcinmrow.github.io/front-end-portfolio-web/).
 
