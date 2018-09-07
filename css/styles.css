@@ -253,7 +253,8 @@ hr {
 
 .drop-button {
 	background-color: grey;
-	border: 2px solid grey;
+	border: none;
+	outline: none;
 	color: #ffffff;
 	font-weight: 600;
 	padding: 10px 15px;
@@ -319,7 +320,7 @@ hr {
 	color: grey;
 	font-size: 18px;
 	border: 2px solid #ffffff;
-	border-radius: 80px;
+	border-radius: 10px;
 	line-height: 1.5em;
 }
 
@@ -340,7 +341,7 @@ h3 {
 .skills-list {
 	background-color: #f3f3f3;
 	display: none;
-	padding: 20px;
+	padding: 0 10px;
 }
 
 .show-skills {
@@ -373,6 +374,7 @@ ul {
 .skill-link {
 	text-decoration: none;
 	color: black;
+	padding: 20px 40px;
 }
 
 .skill-link:hover {
@@ -417,6 +419,10 @@ ul {
   font-size: 16px;
   padding: 20px;
   line-height: 1.5em;
+  text-decoration: none;
+}
+.overlay a {
+  text-decoration: none;
 }
 
 /************* color hover *************/
@@ -494,7 +500,29 @@ footer a {
 }
 
 .fab, .far, .fa {
-	color: #000000;	
+	color: #000000;
+	padding: 0 10px;
+}
+
+/************* BUTTON - SCROLL TO TOP  *************/
+
+#backToTopArrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /*z-index: 99;*/
+  border: none;
+  outline: none;
+  background-color: #fc9a11;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#backToTopArrow:hover {
+  background-color: #11517e;
 }
 
 /************* CONTACT DETAILS  *************/

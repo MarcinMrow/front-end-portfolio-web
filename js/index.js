@@ -86,3 +86,24 @@ if ('serviceWorker' in navigator) {
 } else {
   console.log('Service workers are not supported.');
 }
+
+/************* BUTTON - SCROLL TO TOP *************/
+
+// The button is shown when users scrolls down 20px from the top of the document
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("backToTopArrow").style.display = "block";
+  } else {
+    document.getElementById("backToTopArrow").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topButton() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

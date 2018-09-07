@@ -11,7 +11,7 @@
 	<!-- add link to jQuery 3.3.1 -->	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<body role="portfolio website">
 <div class="portfolio-nav">
 	<nav>
 		<a href="https://marcinmrow.github.io/front-end-portfolio-web/">
@@ -34,21 +34,21 @@
 					<div class=more-info-box>
 						<p class="header-elevator">I am an aspiring Front-End Web Developer who is passionate about building websites and applications.</p>
 
-						<button onclick="aboutMe()" class="more-info"><i class="fas fa-caret-down fa-2x"></i></button>
-							<div id="moreAboutMeBox" class="about-me">
-								<h2>About Me</h2>
-								<p>I made a decision to change my career last year. I installed the <a href="https://www.sololearn.com/">SoloLearn</a> application and started to learn how to code. I enjoyed it and decided to take further steps.</p>
+						<button role="button" aria-label="more information about me" tabindex="0" onclick="aboutMe()" class="more-info"><i class="fas fa-caret-down fa-2x"></i></button>
+							<div tabindex="0" id="moreAboutMeBox" class="about-me">
+								<h2 tabindex="-1">About Me</h2>
+								<p>I made a decision to change my career last year. I installed the <a role="link" href="https://www.sololearn.com/">SoloLearn</a> application and started to learn how to code. I enjoyed it and decided to take further steps.</p>
 								<p>In October I applied for a <strong>Google Developer Challenge Scholarship</strong> and was one of 60000 successful applicants who were offered the Scholarship. Later I won that challenge and became one of 6000 Scholars who earned a full <strong>Google Developer Nanodegree Scholarship</strong>.</p>
-								<p>I completed the course in August, 2018 and I became the Alumni of <a href="https://eu.udacity.com/">Udacity</a> | Google. When I look back at my achievements I can proudly say that it has been challenging and definitely there is much more to learn.</p>
+								<p>I completed the course in August, 2018 and I became the Alumni of <a role="link" href="https://eu.udacity.com/">Udacity</a> | Google. When I look back at my achievements I can proudly say that it has been challenging and definitely there is much more to learn.</p>
 								<p>I am commited to learning and improving my skills continuously. I want to deepen knowledge about frameworks and many other tools which can be beneficial to my development and help me with working in future projects.</p>
 								<p>I am driven individual who works hard and is focused and determine to strive for a professional career.</p>
 							</div>
 					</div>
 
 					<div class="header-contacts">
-						<a href="https://www.linkedin.com/in/marcin-mrowiński-773154103/" class="contact-link">LinkedIn</a>
-						<a href="https://github.com/MarcinMrow" class="contact-link">GitHub</a>
-						<a id="myButton" class="contact-link">Contact</a>
+						<a role="link" href="https://www.linkedin.com/in/marcin-mrowiński-773154103/" class="contact-link">LinkedIn</a>
+						<a role="link" href="https://github.com/MarcinMrow" class="contact-link">GitHub</a>
+						<a tabindex="0" role="button" id="myButton" class="contact-link">Contact</a>
 					</div>
 
 			</section>
@@ -61,17 +61,17 @@
 				<div id="myModal" class="modal">
   				<!-- Modal content -->
   				<div class="modal-content">
-  					<span class="close">&times;</span>
-						<section class="welcome-info">
-  						<h2>Contact Me</h2>
-							<p>
-								<i class="far fa-envelope fa-2x"></i>
-								<a href="mailto:mpmrowinski@gmail.com">mpmrowinski@gmail.com</a>
-							</p>
-							<p>
-								<i class="fas fa-phone fa-2x"></i>
-								+48 796 792 723
-							</p>
+  					<span role="button" tabindex="0" class="close">&times;</span>
+						<section aria-label="contact details" tabindex="0" class="welcome-info">
+  						<h2 tabindex="0">Contact Me</h2>
+								<p>
+									<i tabindex="0" aria-label="my email address" class="far fa-envelope fa-2x"></i>
+									<a href="mailto:mpmrowinski@gmail.com">mpmrowinski@gmail.com</a>
+								</p>
+								<p>
+									<i tabinex="0" aria-label="my mobile number" class="fas fa-phone fa-2x"></i>
+									+48 796 792 723
+								</p>
 						</section>
 
 						<!-- Map -->
@@ -83,13 +83,13 @@
  				</div>
 
 				<!-- List of projects -->
-				<button onclick="myProjects()" class="drop-button">FEATURED PROJECTS</button>
+				<button aria-label="featured projects" onclick="myProjects()" class="drop-button">FEATURED PROJECTS</button>
 				<article id="myDropdownProjects" class="projects-list">
 					<section class="project">
 						<img class="image" src="img/peregrine-falcon.jpg" alt="peregrine falcon">
 
 						<div class="overlay">
-    					<p class="short-description">This is the very first project and it is an animal trading card which displays image and basic information about favourite animal.</p>
+    					<a href="https://github.com/MarcinMrow/Animal-Trading-Card"><p class="short-description">This is the very first project and it is an animal trading card which displays image and basic information about favourite animal.</p></a>
   					</div>
 
 						<h3><a href="https://github.com/MarcinMrow/Animal-Trading-Card" class="project-title">ANIMAL CARD</a></h3>
@@ -97,7 +97,7 @@
 					<section class="project">
 						<img class="image" src="img/pixel-art-maker.png" alt="pixel art maker">
 						<div class="overlay">
-    					<p class="short-description">A single-page web app that allows the user to draw on a customizable canvas and create a basic and colourful art.</p>
+    					<a href="https://marcinmrow.github.io/Pixel-Art-Maker/"><p class="short-description">A single-page web app that allows the user to draw on a customizable canvas and create a basic and colourful art.</p></a>
   					</div>
 						<h3><a href="https://marcinmrow.github.io/Pixel-Art-Maker/" class="project-title">PIXEL ART MAKER</a></h3>
 					</section>
@@ -105,55 +105,55 @@
 						<!-- image source: https://pixabay.com/en/analytics-information-innovation-3088958/ -->
 						<img class="image" src="img/analytics-3088958_1920.jpg" alt="lines of code">
 						<div class="overlay">
-    					<p class="short-description">This is the same portfolio website you are looking at right now. Check the GitHub repository to find out more about the way it was created.</p>
+    					<a href="https://github.com/MarcinMrow/front-end-portfolio-web"><p class="short-description">This is the same portfolio website you are looking at right now. Check the GitHub repository to find out more about the way it was created.</p></a>
   					</div>
 						<h3><a href="https://github.com/MarcinMrow/front-end-portfolio-web" class="project-title">PORTFOLIO SITE</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/memory-game.jpg" alt="memory game">
 						<div class="overlay">
-    					<p class="short-description">It is a complete browser-based card matching game. If you have ever played the Concentration classic game, you most probably know it. If not, just try this digital version.</p>
+    					<a href="https://marcinmrow.github.io/Memory-Game/"><p class="short-description">It is a complete browser-based card matching game. If you have ever played the Concentration classic game, you most probably know it. If not, just try this digital version.</p></a>
   					</div>
 						<h3><a href="https://marcinmrow.github.io/Memory-Game/" class="project-title">MEMORY GAME</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/arcade-game.jpg" alt="arcade game">
 						<div class="overlay">
-    					<p class="short-description">This is a real-life and complete browser-based arcade game. It is a recreation of the Frogger - classic arcade game.</p>
+    					<a href="https://marcinmrow.github.io/Classic-Arcade-Game-Clone/"><p class="short-description">This is a real-life and complete browser-based arcade game. It is a recreation of the Frogger - classic arcade game.</p></a>
   					</div>
 						<h3><a href="https://marcinmrow.github.io/Classic-Arcade-Game-Clone/" class="project-title">ARCADE GAME</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/jasmine-prtsc.jpg" alt="jasmine testing">
 						<div class="overlay">
-    					<p class="short-description">How to use Jasmine to write a number of tests against a web-based application that reads RSS feeds? Click the button to find out more about test-driven development.</p>
+    					<a href="https://github.com/MarcinMrow/Feed-Reader-Testing"><p class="short-description">How to use Jasmine to write a number of tests against a web-based application that reads RSS feeds? Click the button to find out more about test-driven development.</p></a>
   					</div>
 						<h3><a href="https://github.com/MarcinMrow/Feed-Reader-Testing" class="project-title">FEED READER TESTING</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/restaurant-reviews.jpg" alt="restaurant app">
 						<div class="overlay">
-    					<p class="short-description">This is a Stage One where you can see how to convert a static webpage to a mobile-ready web app which is accessible, responsive and caches some assets for offline use.</p>
+    					<a href="https://marcinmrow.github.io/Restaurant-Reviews-App-Stage-1/"><p class="short-description">This is a Stage One where you can see how to convert a static webpage to a mobile-ready web app which is accessible, responsive and caches some assets for offline use.</p></a>
   					</div>
 						<h3><a href="https://marcinmrow.github.io/Restaurant-Reviews-App-Stage-1/" class="project-title">RESTAURANT REVIEWS</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/my-reads.jpg" alt="book tracking app">
 						<div class="overlay">
-    					<p class="short-description">This is a bookshelf app that allows to select and categorize books. The project emphasizes using React to build the app and provides an API server and client library.</p>
+    					<a href="https://github.com/MarcinMrow/MyReads-A-Book-Tracking-App"><p class="short-description">This is a bookshelf app that allows to select and categorize books. The project emphasizes using React to build the app and provides an API server and client library.</p></a>
   					</div>
 						<h3><a href="https://github.com/MarcinMrow/MyReads-A-Book-Tracking-App" class="project-title">BOOK TRACKING</a></h3>
 					</section>
 					<section class="project">
 						<img class="image" src="img/nieghborhood-map.jpg" alt="nieghborhood map app">
 						<div class="overlay">
-    					<p class="short-description">This is a single page application using React and featuring a map of a neighborhood with local cafes. Third-party APIs provide additional information for each location.</p>
+    					<a href="https://github.com/MarcinMrow/Neighborhood-Map-React"><p class="short-description">This is a single page application using React and featuring a map of a neighborhood with local cafes. Third-party APIs provide additional information for each location.</p></a>
   					</div>
 						<h3><a href="https://github.com/MarcinMrow/Neighborhood-Map-React" class="project-title">NEIGHBORHOOD MAP</a></h3>
 					</section>
 				</article>
 
-				<button onclick="mySkills()" class="drop-button">SKILLS</button>
+				<button aria-label="skills" onclick="mySkills()" class="drop-button">SKILLS</button>
 				<article id="mySkillsList" class="skills-list">
 					
 					<!-- List of skills -->
@@ -217,6 +217,10 @@
 				<a href="mailto:mpmrowinski@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
 			<section>
 		</footer>
+
+		<button onclick="topButton()" title="Back to top" id="backToTopArrow" class="arrow-symbol">
+			<i class="fas fa-chevron-circle-up fa-2x"></i>
+		</button>
 
 		<!-- Map api key -->
   	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZgCuxKRu85jYhwg4H9JNCYKl7URtbU8w&libraries=places&callback=initMap"></script>
