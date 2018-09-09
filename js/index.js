@@ -107,3 +107,28 @@ function topButton() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+/************* HAM MENU *************/
+
+// Open the drawer when the menu icon is clicked.
+   
+var menu = document.querySelector('#menu');
+var main = document.querySelector('main');
+var drawer = document.querySelector('.nav');
+
+menu.addEventListener('click', function(e) {
+  drawer.classList.toggle('open');
+  e.stopPropagation();
+});
+main.addEventListener('click', function() {
+  drawer.classList.remove('open');
+});
+
+// Close the nav menu when button Contact is clicked
+btn.addEventListener('click', function() {
+  drawer.classList.remove('open');
+});
+
+
+
+

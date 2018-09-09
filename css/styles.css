@@ -50,6 +50,7 @@ body {
 	z-index: 1;
 }
 
+/*
 nav {
   width: 100%;
   height: 60px;
@@ -74,6 +75,7 @@ nav h2 a {
 	text-align: center;
 	font-size: 20px;
 }
+*/
 
 img {
 	width: 260px;
@@ -90,19 +92,57 @@ header {
 	align-items: center;
 }
 
-main {
-	margin-bottom: 40px;
+.header { 
+  min-height: 56px;
+  transition: min-height 0.3s;
+  position: relative;
+	z-index: 1;
 }
 
-.main-header {
+.header-title {
+  font-size: 20px;
+  display: inline-block;
+  color: #212121;
+}
+
+
+.inside-header {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  letter-spacing: 10px;
+  background: #11517e;
+  position: fixed;
+  line-height: 1.5em;
+}
+
+.inside-header h2 {
+	margin: auto;
+	/*margin-left: auto;*/
+}
+
+.inside-header h2 a {
+	text-decoration: none;
+	color: #ffffff;	
+	text-align: center;	
+}
+
+main {
+	margin-bottom: 20px;
+}
+
+.main-info {
 	width: 100%;
-	padding: 60px 10px 0;
+	padding: 10px 0;
 	display: flex;
   flex-wrap: wrap;
 }
 
-.header-title {
-	text-align: center;
+.title-info {
 	display: block;
 	width: 100%;
 }
@@ -111,42 +151,27 @@ main {
 	font-size: 20px;
   font-weight: 300;
   margin: auto;
-  padding: 10px 0;
+  padding: 10px;
   line-height: 1.5em;
   float: left;
+  text-align: justify;
 }
 
-.header-contacts {
-	width: 500px;
-	display: flex;
-	justify-content: space-between;
-	margin: auto;
-	padding: 20px 0 20px;
-}
-
-.contact-link {
-	border: 2px solid grey;
-	border-radius: 80px;
-	color: grey;
-	font-weight: 600;
-	padding: 10px 15px;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.contact-link:hover {	
-	background: #11517E;
-	color: #ffffff;	
+.header-elevator p {
+	margin: 0;
 }
 
 .name {	
 	font-size: 24px;
-	line-height: 1.5em;	
+	line-height: 1.5em;
+	text-align: center;
+	margin-top: 0;
 }
 
 .title {
 	font-size: 20px;
 	line-height: 1.5em;
+	text-align: center;
 }
 
 /********************* About Me Box *********************/
@@ -240,6 +265,66 @@ hr {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*************** Top Level Navigation ***************/
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  line-height: 24px;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-item:hover {	
+	background: #11517E;
+}
+
+.contact-link {
+	text-decoration: none;
+}
+
+nav a {
+  color: grey;
+  padding: 1em 2em;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-menu svg {
+	background-color: #fc9a11;
+  fill: #333333;
+  cursor: pointer;
+  width: 48px;
+  padding: 5px;
+	/*border-radius: 5px;*/
+	vertical-align: bottom;
+  height: 60px;
+  position: relative;
 }
 
 /*
@@ -374,7 +459,6 @@ ul {
 .skill-link {
 	text-decoration: none;
 	color: black;
-	padding: 20px 40px;
 }
 
 .skill-link:hover {
@@ -469,6 +553,10 @@ ul {
 	background-color: #463014;
 }
 
+.skill-soft:hover {
+	background-color: #0b7a1d;
+}
+
 /*
  * 	F O O T E R
  */
@@ -484,6 +572,8 @@ footer {
 
 footer p {
 	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 footer a {
@@ -519,6 +609,7 @@ footer a {
   cursor: pointer;
   padding: 15px;
   border-radius: 50px;
+  opacity: 0.9;
 }
 
 #backToTopArrow:hover {
@@ -565,8 +656,10 @@ footer a {
 }
 
 .fa-home {
-	color: #ffffff;
+	/*color: #ffffff;*/
+	color: #fc9a11;
 	padding: 10px;
+	float: right;
 }
 
 .details-container {
@@ -623,12 +716,16 @@ img {
 }
 
 .short-description {
-  font-size: 14px;
+  font-size: 11px;
   padding: 5px 10px;
 }
 
 .welcome-info p {
 	font-size: 12px;
+}
+
+.header-elevator {
+	font-size: 16px;
 }
 
 }
@@ -674,6 +771,10 @@ img {
   width: 100%;
 }
 
+.skill-link {
+	padding: 40px 10px;
+}
+
 }
 
 @media screen and (max-width: 450px) {
@@ -682,7 +783,7 @@ img {
 	width: 100%;	
 }
 
-.header-title {
+.title-info {
 	width: 100%;
 	display: inline-block;	
 }
@@ -705,6 +806,33 @@ img {
  	margin: auto;
 }
 
+.projects-list {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.skills-list {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.header-elevator {
+	font-size: 18px;
+	padding: 10px 30px;
+}
+
+.more-info {
+	display: none;
+}
+
+.drop-button {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 footer p {
 	display: flex;
 	flex-wrap: wrap;
@@ -720,6 +848,62 @@ h4 {
 /* 
  * T A B L E T
  */
+ @media screen and (max-width: 610px) {
+
+.header-title {
+	margin-left: 0;
+}
+
+.header-title h2 a {
+	font-size: 16px;
+}
+  
+.inside-header h2 {
+	margin: auto;
+	margin-left: 100px;
+	font-size: 16px;
+}
+
+.nav {
+	z-index: 10;
+	background-color: #fff;
+	width: 300px;
+	position: fixed;
+	/* This trasform moves the drawer off canvas. */
+	-webkit-transform: translate(-300px, 0);
+	transform: translate(-300px, 0);
+	/* Optionally, we animate the drawer. */
+	transition: transform 0.3s ease;
+	margin-top: 2px;
+	display: block;
+}
+
+.nav.open {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);	
+	margin-top: 2px;
+}
+
+.nav-item {
+	display: list-item;
+	border-bottom: 1px solid #E0E0E0;
+	width: 100%;
+	text-align: left;
+	padding: 25px;
+}
+  
+.header-menu {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+ 
+.header-menu svg {
+	/*width: 32px;*/
+	fill: #E0E0E0;
+}
+
+}
 
 @media screen and (max-width: 670px) {
 
@@ -733,11 +917,12 @@ h4 {
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 840px) {
 
 .welcome-info {
 	width: 100%;
 	padding: 5px;
+	/*margin-left: 20px;*/
 }
 
 #map {
@@ -755,7 +940,7 @@ header {
 	flex-wrap: nowrap;
 }
 
-.header-title {
+.title-info {
 	width: 100%;
 }
 
