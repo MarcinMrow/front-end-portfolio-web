@@ -128,7 +128,3 @@ main.addEventListener('click', function() {
 btn.addEventListener('click', function() {
   drawer.classList.remove('open');
 });
-
-
-
-

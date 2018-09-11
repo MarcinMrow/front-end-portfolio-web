@@ -684,6 +684,15 @@ footer a {
 	height: 100%;
 }
 
+.welcome-info a {
+	text-decoration: none;
+}
+
+.mobile-number a {
+	color: #000000;
+	cursor: auto;
+}
+
 /************* RESPONSIVE - MEDIA QUERIES *************/
 
 /*  

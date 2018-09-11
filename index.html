@@ -16,7 +16,7 @@
 	<header class="header">
 		
 		<div class="inside-header">
-			<a id="menu" class="header-menu">
+			<a id="menu" tabindex="0" aria-label="header menu" class="header-menu">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 					<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
 				</svg>
@@ -37,14 +37,14 @@
 		<ul class="nav-list">
 			<li class="nav-item"><a href="https://www.linkedin.com/in/marcin-mrowiński-773154103/" class="contact-link">LinkedIn</a></li>
 			<li class="nav-item"><a href="https://github.com/MarcinMrow" class="contact-link">GitHub</a></li>
-			<li class="nav-item"><a id="myButton" class="contact-link">Contact</a></li>
+			<li class="nav-item"><a href="#" tabindex="0" id="myButton" class="contact-link">Contact</a></li>
 			<li class="nav-item"><a href="#" class="contact-link">Resume</a></li>
 		</ul>
 	</nav>
 
 	<div class="site-wrapper">
-		<div class="main-info">
-			<section class="title-info">
+		<div tabindex="0" aria-label="information about marcin" class="main-info">
+			<section tabindex="0" class="title-info">
 				<h1 class="name">MARCIN MROWIŃSKI</h1>
 					<h2 class="title">Front-End Web Developer</h2>	
 					<div class=more-info-box>
@@ -63,12 +63,12 @@
 						<section aria-label="contact details" tabindex="0" class="welcome-info">
 							<h2 tabindex="0">Contact Me</h2>
 								<p>
-									<i tabindex="0" aria-label="my email address" class="far fa-envelope fa-2x"></i>
+									<i tabindex="-1" aria-label="my email address" class="far fa-envelope fa-2x"></i>
 									<a href="mailto:mpmrowinski@gmail.com">mpmrowinski@gmail.com</a>
 								</p>
-								<p>
+								<p class="mobile-number">
 									<i tabinex="0" aria-label="my mobile number" class="fas fa-phone fa-2x"></i>
-									+48 796 792 723
+									<a href="#">+48 796 792 723</a>
 								</p>
 						</section>
 
@@ -221,15 +221,15 @@
 		<!-- horizontal line -->
 		<hr>
 
-		<footer>
+		<footer tabindex="0">
 			<p>Copyright (C) | 2018 | Created by Marcin Mrowiński | All Rights reserved</p>
 			<section class="contact-details">
-				<a href="https://www.linkedin.com/in/marcin-mrowiński-773154103/"><i class="fab fa-linkedin fa-2x"></i></a>
-				<a href="https://github.com/MarcinMrow"><i class="fab fa-github fa-2x"></i></a>
-				<a href="mailto:mpmrowinski@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
-			<section>
+				<a aria-label="linkedin" href="https://www.linkedin.com/in/marcin-mrowiński-773154103/"><i class="fab fa-linkedin fa-2x"></i></a>
+				<a aria-label="github" href="https://github.com/MarcinMrow"><i class="fab fa-github fa-2x"></i></a>
+				<a aria-label="my e-mail address" href="mailto:mpmrowinski@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+			</section>
 		</footer>
-		<div id="bodyColor" class="body-overlay"></div>
+		<div id="bodyColor" class="portfolio-web"></div>
 
 		<button onclick="topButton()" title="Back to top" id="backToTopArrow" class="arrow-symbol">
 			<i class="fas fa-chevron-circle-up fa-2x"></i>
