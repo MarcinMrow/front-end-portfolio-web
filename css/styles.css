@@ -322,7 +322,7 @@ object {
 }
 
 nav a {
-  color: grey;
+  color: #575757;
   padding: 1em 2em;
 }
 
@@ -357,7 +357,7 @@ nav a:hover {
  }
 
 .drop-button {
-	background-color: grey;
+	background-color: #575757;
 	border: none;
 	outline: none;
 	color: #ffffff;
