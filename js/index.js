@@ -42,7 +42,7 @@ function initMap() {
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
-  });
+  }, {passive: true});
 }
 
 /************* MODAL BOX *************/
@@ -119,12 +119,16 @@ var drawer = document.querySelector('.nav');
 menu.addEventListener('click', function(e) {
   drawer.classList.toggle('open');
   e.stopPropagation();
-});
+}, {passive: true});
 main.addEventListener('click', function() {
   drawer.classList.remove('open');
-});
+}, {passive: true});
 
 // Close the nav menu when button Contact is clicked
 btn.addEventListener('click', function() {
   drawer.classList.remove('open');
-});
+}, {passive: true});
+
+window.addEventListener('touchmove', event => {
+  console.log(event);
+}, {passive: true});
