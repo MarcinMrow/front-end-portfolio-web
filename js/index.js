@@ -129,6 +129,18 @@ btn.addEventListener('click', function() {
   drawer.classList.remove('open');
 }, {passive: true});
 
-window.addEventListener('touchmove', event => {
+document.addEventListener('touchmove', event => {
+  console.log(event);
+}, {passive: true});
+
+document.addEventListener('touchstart', event => {
+  console.log(event);
+}, {passive: true});
+
+document.addEventListener('wheel', event => {
+  console.log(event);
+}, {passive: true});
+
+document.addEventListener('mousewheel', event => {
   console.log(event);
 }, {passive: true});
