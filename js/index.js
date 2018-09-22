@@ -43,6 +43,11 @@ function initMap() {
   marker.addListener('click', function() {
     infowindow.open(map, marker);
   }, {passive: true});
+
+  marker.addEventListener("touch",
+    function(e) {
+      console.log(e);
+    }, {passive: true});
 }
 
 /************* MODAL BOX *************/
