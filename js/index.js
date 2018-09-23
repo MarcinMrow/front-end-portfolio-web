@@ -130,6 +130,7 @@ btn.addEventListener('click', function() {
   drawer.classList.remove('open');
 }, {passive: true});
 
+// add passive event listeners
 document.addEventListener('touchmove', event => {
   console.log(event);
 }, {passive: true});
@@ -145,3 +146,25 @@ document.addEventListener('wheel', event => {
 document.addEventListener('mousewheel', event => {
   console.log(event);
 }, {passive: true});
+
+
+// add intersection observer
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting === true) {
+      const img = entry.target.querySelector('img');
+      entry.target.style.visibility = "visible";
+    } else {
+      entry.target.style.visibility = "hidden";
+    }
+  })
+});
+
+const items = document.querySelectorAll('.project');
+
+items.forEach((item, index) => {
+  observer.observe(item, index);
+});
+
