@@ -3,7 +3,6 @@ body, html {
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
-
 body {
 	line-height: 1.15em;
 	margin: 0;
@@ -11,17 +10,14 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
 * {
 	box-sizing: border-box;
 }
-
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
 body {
 	-ms-box-orient: horizontal;
 	display: -webkit-box;
@@ -37,46 +33,16 @@ body {
 	-webkit-align-items: stretch;
 	align-items: stretch;
 }
-
 .site-wrapper {
 	display: block;
 	width: 80%;
 	border: 1px hidden;
 	margin: auto;
 }
-
 .portfolio-nav {
 	position: relative;
 	z-index: 1;
 }
-
-/*
-nav {
-  width: 100%;
-  height: 60px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  letter-spacing: 10px;
-  background: #11517E;
-  position: fixed;
-  line-height: 1.5em;
-}
-
-nav h2 {
-	margin: auto;
-}
-
-nav h2 a {
-	text-decoration: none;
-	color: #ffffff;	
-	text-align: center;
-	font-size: 20px;
-}
-*/
-
 img {
 	width: 260px;
 	height: 250px;
@@ -91,21 +57,17 @@ header {
 	flex-wrap: nowrap;
 	align-items: center;
 }
-
 .header { 
   min-height: 56px;
   transition: min-height 0.3s;
   position: relative;
 	z-index: 1;
 }
-
 .header-title {
   font-size: 20px;
   display: inline-block;
   color: #212121;
 }
-
-
 .inside-header {
   width: 100%;
   height: 60px;
@@ -119,34 +81,27 @@ header {
   position: fixed;
   line-height: 1.5em;
 }
-
 .inside-header h2 {
 	margin: auto;
-	/*margin-left: auto;*/
 }
-
 .inside-header h2 a {
 	text-decoration: none;
 	color: #ffffff;	
 	text-align: center;	
 }
-
 main {
 	margin-bottom: 20px;
 }
-
 .main-info {
 	width: 100%;
 	padding: 10px 0;
 	display: flex;
   flex-wrap: wrap;
 }
-
 .title-info {
 	display: block;
 	width: 100%;
 }
-
 .header-elevator {
 	font-size: 20px;
   font-weight: 300;
@@ -156,18 +111,15 @@ main {
   float: left;
   text-align: justify;
 }
-
 .header-elevator p {
 	margin: 0;
 }
-
 .name {	
 	font-size: 24px;
 	line-height: 1.5em;
 	text-align: center;
 	margin-top: 0;
 }
-
 .title {
 	font-size: 20px;
 	line-height: 1.5em;
@@ -175,7 +127,6 @@ main {
 }
 
 /********************* About Me Box *********************/
-
 .more-info {
 	cursor: pointer;
   padding: 5px;
@@ -184,7 +135,6 @@ main {
   position: absolute;
   float: right;
 }
-
 .about-me {
 	background-color: #f3f3f3;
 	display: flex;
@@ -197,19 +147,16 @@ main {
 	text-align: justify;
 	display: none;
 }
-
 .about-me p {
 	line-height: 1.5em;
 	margin: 5px;
 }
-
 .about-me a {
 	color:#11517e;
 	text-decoration: none;
   cursor: pointer;
   font-weight: bold;
 }
-
 .show-info {
 	display: flex;
 	flex-wrap: wrap;
@@ -217,7 +164,6 @@ main {
 }
 
 /********************* Horizontal line *********************/
-
 hr {	
   height: 3px;
   background-color: grey;
@@ -240,7 +186,6 @@ hr {
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0,0.4);
 }
-
 /* Modal Content */
 .modal-content {
 	background-color: #fefefe;
@@ -250,7 +195,6 @@ hr {
 	width: 80%;
 	border-radius: 10px;
 }
-
 /* Close Button */
 .close {
 	color: #aaaaaa;
@@ -259,7 +203,6 @@ hr {
 	font-weight: bold;
 	text-align: center;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -268,7 +211,6 @@ hr {
 }
 
 /*************** Modal Resume Box ***************/
-
 .modal-resume {
 	display: none;
   position: fixed;
@@ -281,27 +223,23 @@ hr {
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0,0.4);
 }
-
 object {
 	width: 100%;
 	height: 100%;
 }
 
 /*************** Top Level Navigation ***************/
-
 .nav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
-
 .nav-list {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
 .nav-item {
   box-sizing: border-box;
   display: inline-block;
@@ -312,29 +250,23 @@ object {
   font-weight: 600;
   cursor: pointer;
 }
-
 .nav-item:hover {	
 	background: #11517E;
 }
-
 .contact-link {
 	text-decoration: none;
 }
-
 nav a {
   color: #575757;
   padding: 1em 2em;
 }
-
 nav a:hover {
   text-decoration: none;
   color: #ffffff;
 }
-
 .header-menu {
   display: none;
 }
-
 .header-menu svg {
 	background-color: #fc9a11;
   fill: #333333;
@@ -355,7 +287,6 @@ nav a:hover {
  	padding: 10px;
  	text-align: center;
  }
-
 .drop-button {
 	background-color: #575757;
 	border: none;
@@ -372,12 +303,10 @@ nav a:hover {
 	border-radius: 2px;
 	letter-spacing: 3px;
 }
-
 .drop-button:hover, .drop-button:focus {
 	background: #11517E;
 	color: #ffffff;	
 }
-
 .projects-list {	
 	background-color: #f3f3f3;
 	display: flex;
@@ -391,17 +320,14 @@ nav a:hover {
 	text-align: center;
 	display: none;
 }
-
 .show {
 	display: block;
 }
-
 .container {
 	justify-content: center;
 	margin: auto;
 	width: 100%;	
 }
-
 .project {
 	width: 300px;
 	display: inline-block;
@@ -412,7 +338,6 @@ nav a:hover {
 	margin: 15px;
 	min-height: 250px;	
 	position: relative;
-
 	overflow: hidden;
 	transform: translateY(-5%);
 	opacity: 0;
@@ -422,7 +347,6 @@ nav a:hover {
 	transform: translateY(0);
 	opacity: 1;
 }
-
 .project-title {
 	border: 10px;
 	padding: 10px;
@@ -437,12 +361,10 @@ nav a:hover {
 	border-radius: 10px;
 	line-height: 1.5em;
 }
-
 .project-title:hover {	
 	background: #11517E;
 	color: #ffffff;	
 }
-
 h3 {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -451,18 +373,15 @@ h3 {
   text-align: center;
   text-decoration: none;
 }
-
 .skills-list {
 	background-color: #f3f3f3;
 	display: none;
 	padding: 0 10px;
 }
-
 .show-skills {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 ul {
 	display: -webkit-box;
   display: -moz-box;
@@ -473,7 +392,6 @@ ul {
   justify-content: space-around;
   padding: 5px;
 }
-
 #skill li {
 	padding: 10px;
 	display: flex;
@@ -484,18 +402,15 @@ ul {
 	margin-right: auto;
 	border-radius: 4px;
 }
-
 .skill-link {
 	text-decoration: none;
 	color: black;
 }
-
 .skill-link:hover {
 	color: #ffffff;
 }
 
 /************* overlay info *************/
-
 .image {
   opacity: 1;
   transition: .5s ease;
@@ -503,7 +418,6 @@ ul {
   align-items: center;
 	align-content: center;
 }
-
 .overlay {
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
@@ -518,15 +432,12 @@ ul {
 	width: 260px;
 	height: 250px;
 }
-
 .project:hover .image {
   opacity: 0.3;
 }
-
 .project:hover .overlay {
   opacity: 1;
 }
-
 .short-description {
 	color: #ffffff;
   font-size: 16px;
@@ -539,45 +450,35 @@ ul {
 }
 
 /************* color hover *************/
-
 .skill-html:hover {
 	background-color: #e34f26;
 	color: #ffffff;
 }
-
 .skill-css:hover {
 	background-color: #3f51b5;
 	color: #ffffff;
 }
-
 .skill-js:hover {
 	background-color: #f7df1e;
 }
-
 .skill-react:hover {
 	background-color: #00d8ff;
 }
-
 .skill-jquery:hover {
 	background-color: #0769ad;
 }
-
 .skill-jasmine:hover {
 	background-color: #8A4182; 
 }
-
 .skill-gulp:hover {
 	background-color: #cf4647;
 }
-
 .skill-aria:hover {
 	background-color: #005a9c;
 }
-
 .skill-git:hover {
 	background-color: #ef391a;
 }
-
 .skill-grunt:hover {
 	background-color: #463014;
 }
@@ -594,17 +495,14 @@ footer {
 	background-color: #ffffff;
 	line-height: 1.5em;
 }
-
 footer p {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
 footer a {
 	margin: auto;
 }
-
 .contact-details {
 	display: flex;
 	justify-content: space-around;
@@ -613,14 +511,12 @@ footer a {
 	margin-right: auto;
 	padding: 5px;
 }
-
 .fab, .far, .fa {
 	color: #000000;
 	padding: 0 10px;
 }
 
 /************* BUTTON - SCROLL TO TOP  *************/
-
 #backToTopArrow {
   display: none;
   position: fixed;
@@ -636,13 +532,11 @@ footer a {
   border-radius: 50px;
   opacity: 0.9;
 }
-
 #backToTopArrow:hover {
   background-color: #11517e;
 }
 
 /************* CONTACT DETAILS  *************/
-
 .contact-header {
 	position: fixed;
   width: 100%;
@@ -653,24 +547,20 @@ footer a {
   line-height: 1.5em;
   top: 0;
 }
-
 .contact-header a {
 	text-decoration: none;
 	color: #ffffff;	
 	text-align: center;
 	font-size: 20px;
 }
-
 .contact-header h2 {
 	margin: auto;
 }
-
 .contact-site-wrapper {
 	display: block;
 	width: 100%;
 	background-color: #efeded;
 }
-
 .welcome-info {
 	padding: 160px 20px;
 	text-align: center;
@@ -679,14 +569,11 @@ footer a {
 	float: left;
   width: 40%;
 }
-
 .fa-home {
-	/*color: #ffffff;*/
 	color: #fc9a11;
 	padding: 10px;
 	float: right;
 }
-
 .details-container {
 	float: right;
 	width: calc(50% - 40px);
@@ -696,23 +583,19 @@ footer a {
 	background-color: #efeded;
 	border-radius: 5px;
 }
-
 #map-container {
   top: 80px;
   height: 500px;
   padding: 20px;
   margin: 10px;
 }
-
 #map {
 	background-color: #ccc;
 	height: 100%;
 }
-
 .welcome-info a {
 	text-decoration: none;
 }
-
 .mobile-number a {
 	color: #000000;
 	cursor: auto;
@@ -725,17 +608,14 @@ footer a {
  */
 
 @media screen and (max-width: 340px) {
-
 nav h2 a {
 	font-size: 16px;
 	letter-spacing: 2px;
 }
-
 img {
 	width: 160px;
 	height: 150px;
 }
-
 .project-title {
 	width: 160px;
 	margin-left: auto;
@@ -743,52 +623,41 @@ img {
 	line-height: 1.5em;
 	font-size: 14px;
 }
-
 .overlay {
 	width: 100%;
 	height: 160px;
 }
-
 .short-description {
   font-size: 11px;
   padding: 5px 10px;
 }
-
 .welcome-info p {
 	font-size: 12px;
 }
-
 .header-elevator {
 	font-size: 16px;
 }
-
 }
 
 @media screen and (max-width: 390px) {
-
 #skill li {
 	height: 75px;
   width: 100%;
 }
-
 }
 
 @media screen and (max-width: 420px) {
-
 .header-contacts {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
 .contact-link {
 	margin: 10px 60px;
 }
-
 }
 
 @media screen and (min-width: 341px) and (max-width: 450px) {
-
 .project-title {
 	border: 10px;
 	display: flex;
@@ -799,105 +668,84 @@ img {
 	margin-right: auto;
 	margin-bottom: 30px;
 }
-
 .overlay {
 	bottom: 100px;
   width: 100%;
 }
-
 .skill-link {
 	padding: 40px 10px;
 }
-
 }
 
 @media screen and (max-width: 450px) {
-
 .site-wrapper {
 	width: 100%;	
 }
-
 .title-info {
 	width: 100%;
 	display: inline-block;	
 }
-
 .container {
 	padding: 0 10px;
 }
-
 .project-title a {
 	width: 260px;
 }
-
 .project {
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .projects-list h2 {
  	margin: auto;
 }
-
 .projects-list {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
 .skills-list {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
 .header-elevator {
 	font-size: 18px;
 	padding: 10px 30px;
 }
-
 .more-info {
 	display: none;
 }
-
 .drop-button {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
 footer p {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 h4 {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 }
 
 /* 
  * T A B L E T
  */
  @media screen and (max-width: 610px) {
-
 .header-title {
 	margin-left: 0;
 }
-
 .header-title h2 a {
 	font-size: 16px;
-}
-  
+} 
 .inside-header h2 {
 	margin: auto;
 	margin-left: 100px;
 	font-size: 16px;
 }
-
 .nav {
 	z-index: 10;
 	background-color: #fff;
@@ -911,13 +759,11 @@ h4 {
 	margin-top: 2px;
 	display: block;
 }
-
 .nav.open {
 	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);	
 	margin-top: 2px;
 }
-
 .nav-item {
 	display: list-item;
 	border-bottom: 1px solid #E0E0E0;
@@ -925,70 +771,56 @@ h4 {
 	text-align: left;
 	padding: 25px;
 }
-  
 .header-menu {
 	display: inline-block;
 	position: absolute;
 	left: 0;
 }
- 
 .header-menu svg {
 	/*width: 32px;*/
 	fill: #E0E0E0;
 }
-
 }
 
 @media screen and (max-width: 670px) {
-
 .header-contacts {
 	width: 100%;
 }
-
 .contact-details {
 	width: 100%;
 }
-
 }
 
 @media screen and (max-width: 840px) {
-
 .welcome-info {
 	width: 100%;
 	padding: 5px;
 	/*margin-left: 20px;*/
 }
-
 #map {
 	width: 100%;
 	height: 60%;
 }
-
 }
 
 @media screen and (min-width: 451px) and (max-width: 947px) {
-
 /* Header */
 header {
 	display: flex;
 	flex-wrap: nowrap;
 }
-
 .title-info {
 	width: 100%;
 }
-
 /* Footer */
 footer p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;	
 }
-
 h4 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;	
 }
-
 }
