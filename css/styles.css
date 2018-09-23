@@ -413,6 +413,7 @@ nav a:hover {
 	min-height: 250px;	
 	position: relative;
 
+	overflow: hidden;
 	transform: translateY(-5%);
 	opacity: 0;
 	transition: 100ms transform cubic-bezier(0.55, 0.55, 0.68, 0.18), 100ms opacity cubic-bezier(0.55, 0.55, 0.68, 0.18) 100ms;
