@@ -412,6 +412,14 @@ nav a:hover {
 	margin: 15px;
 	min-height: 250px;	
 	position: relative;
+
+	transform: translateY(-5%);
+	opacity: 0;
+	transition: 100ms transform cubic-bezier(0.55, 0.55, 0.68, 0.18), 100ms opacity cubic-bezier(0.55, 0.55, 0.68, 0.18) 100ms;
+}
+.project.inview {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .project-title {

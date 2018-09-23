@@ -149,15 +149,13 @@ document.addEventListener('mousewheel', event => {
 
 
 // add intersection observer
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting === true) {
-      const img = entry.target.querySelector('img');
-      entry.target.style.visibility = "visible";
+      entry.target.classList.add("inview");      
     } else {
-      entry.target.style.visibility = "hidden";
+      entry.target.classList.remove("inview");
     }
   })
 });
