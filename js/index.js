@@ -151,9 +151,10 @@ document.addEventListener('mousewheel', event => {
 // add intersection observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
+    console.log(entry);  
     if (entry.isIntersecting === true) {
-      entry.target.classList.add("inview");      
+      const img = entry.target.querySelector("img");
+      entry.target.classList.add("inview");
     } else {
       entry.target.classList.remove("inview");
     }
